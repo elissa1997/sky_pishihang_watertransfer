@@ -1,4 +1,50 @@
-module.exports = { 
+module.exports = {
+  chainWebpack: config => {
+    config
+        .plugin('html')
+        .tap(args => {
+            args[0].title = "淠史杭输水线路";
+            return args;
+        })
+  },
+  productionSourceMap: false,
+  // publicPath: process.env.NODE_ENV === 'production' ? '/ahjs/ssxl/' : '/',
+  // cli3 代理是从指定的target后面开始匹配的，不是任意位置；配置pathRewrite可以做替换
+  devServer: {
+    port: '9001',
+    proxy: {
+        
+        // '/ahjs': {
+        //     target:  'http://10.34.0.118:8081' ,
+        //     changeOrigin: true,
+        //     pathRewrite: {
+        //     '^/ahjs': 'ahjs' 
+        //     }
+        // },
+        '/dist': {
+            target:  'http://10.34.0.118:8081/dist/' ,
+            changeOrigin: true,
+            pathRewrite: {
+            // '^/dist': 'dist' 
+            '^/dist': '' 
+            }
+        },
+        '/arcgis': {
+            target: 'http://10.34.0.12:6080',
+            changeOrigin: true,
+            pathRewrite: {
+                '^/arcgis': 'arcgis'//process.env.PATH_REWRITE ||
+            }
+        },
+        '/local': {
+            target:  'http://127.0.0.1:8080/ahjs/' ,
+            changeOrigin: true,
+            pathRewrite: {
+            '^/local': '' 
+            }
+        }
+    }
+  },
   css: {
     loaderOptions: {
       // 给 sass-loader 传递选项
