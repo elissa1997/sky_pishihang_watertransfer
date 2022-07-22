@@ -1,0 +1,77 @@
+// ESRI样式覆盖
+
+.esri-view .esri-view-surface--inset-outline:focus::after {
+  outline: auto 0px Highlight !important;
+  outline: auto 0px -webkit-focus-ring-color !important;
+}
+
+.esri-popup--shadow {
+  box-shadow: 0px 0px 10px #0000002c !important;
+}
+
+.esri-popup{  
+  .esri-popup__main-container {
+    border-radius: 5px;
+    max-height: 500px !important;
+    width: 520px !important;
+
+    .esri-popup__header {
+      align-items: center;
+      border-bottom: 1px solid #0000001f;
+      .esri-popup__header-title {
+        font-size: 17px;
+        padding: 0px;
+        margin: 0px 10px;
+        color: #1890ff!important;
+        font-weight: 700;
+      }
+
+      .esri-popup__header-title::before{
+        content: " ";
+        width: 4px;
+        background-color: #1890ff;
+        margin-right: 10px;
+      }
+    }
+
+    .esri-popup__content {
+      margin: 0px;
+      // height: auto !important;
+    }
+
+    .esri-popup__footer {
+      display: none;
+    }
+
+  }
+}
+
+// .esri-view .esri-view-root .esri-popup__header {
+//   border-top-left-radius: 8px;
+//   border-top-right-radius: 8px;
+//   background-color: rgb(221,241,255) !important;
+//   border-bottom: 1px solid rgb(193,223,250) !important;
+// }
+
+// .esri-popup__header-title {
+//   font-size: 15px;
+//   font-weight: 600;
+// }
+
+// .esri-popup__main-container {
+//   width: 350px !important ;
+// }
+
+// .esri-popup, .esri-popup__main-container {
+//   border-radius: 8px;
+//   max-height: fit-content !important;
+// }
+
+// .esri-popup--shadow {
+//   box-shadow: 0 2px 8px rgb(0 0 0 / 15%) !important;
+  
+// }
+
+// .esri-popup__footer {
+//   display: none !important;
+// }

@@ -1,1 +1,29 @@
 @import './reset.scss';
+@import './fixIcon.scss';
+@import './esri_reset.scss';
+
+// 全局样式
+$introduceHeight: 400px;
+$infoPanelHeight: calc(100vh - 70px - 10px - $introduceHeight - 10px - 10px);
+$mainColor: #099e07;
+$mainColorHover: #42b641;
+
+// 自定义公共样式
+@mixin grossGlass {
+  backdrop-filter: blur(7px);
+  background-color: #ffffffb3;
+}
+
+@mixin boxShadow {
+  box-shadow: 0px 0px 10px #0000002e;
+}
+
+@mixin animation_cubic-bezier {
+  transition: all cubic-bezier(0.46, 0.03, 0.52, 0.96) 0.5s;
+}
+
+@mixin title_text {
+  font-size: 17px;
+  font-weight: 700;
+  color: $mainColor;
+}
