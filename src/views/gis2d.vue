@@ -4,19 +4,22 @@
 
     <template v-if="map">
       <baseLayerSwitch :map="map" @openOverviewLive="openOverviewLive"/>
+      <layerTree :view="view"  />
     </template>
   </div>
 </template>
 
 <script>
 import baseLayerSwitch from "@/components/mapTool/baseLayerSwitch.vue";
+import layerTree from "@/components/mapTool/layerTree.vue";
 import { baseLayers } from "@/layers/baseLayer.js";
 import { layerTest } from "@/layers/layerAgent.js";
 export default {
   name: "gis2d",
   props: {},
   components: {
-    baseLayerSwitch
+    baseLayerSwitch,
+    layerTree
   },
   data() {
     return {

@@ -1,0 +1,81 @@
+﻿{
+    "defaultCheck": [
+      "gate"
+    ],
+    "treeData": [
+      {
+        "title": "水闸",
+        "key": "gate",
+        "slots": {
+          "icon": "gate"
+        },
+        "children": [
+          {
+            "key": "gate-FID70",
+            "title": "滁河干渠节制闸"
+          },
+          {
+            "key": "gate-FID77",
+            "title": "红旗沟泄洪闸"
+          },
+          {
+            "key": "gate-FID85",
+            "title": "大柏店闸"
+          },
+          {
+            "key": "gate-FID88",
+            "title": "南淝河泄洪闸"
+          },
+          {
+            "key": "gate-FID502",
+            "title": "戚家桥泄洪闸"
+          },
+          {
+            "key": "gate-FID503",
+            "title": "金杯进水闸"
+          },
+          {
+            "key": "gate-FID552",
+            "title": "横排头进水闸"
+          },
+          {
+            "key": "gate-FID708",
+            "title": "木南进水闸"
+          },
+          {
+            "key": "gate-FID711",
+            "title": "青龙堰泄水闸"
+          },
+          {
+            "key": "gate-FID714",
+            "title": "瓦西进水闸"
+          },
+          {
+            "key": "gate-FID715",
+            "title": "小皋堰泄洪闸"
+          },
+          {
+            "key": "gate-FID801",
+            "title": "大官塘下坝泄洪闸"
+          },
+          {
+            "key": "gate-FID807",
+            "title": "三十头节制闸"
+          },
+          {
+            "key": "gate-FID3243",
+            "title": "瓦东进水闸"
+          },
+          {
+            "key": "gate-FID3246",
+            "title": "南淝河节制闸"
+          },
+           {
+            "key": "gate-FID3252",
+            "title": "官亭进水闸"
+          }
+        ]
+      }
+    
+    ]
+  }
