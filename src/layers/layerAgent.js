@@ -19,7 +19,7 @@ export async function handlerLayerByTree(map, view, checkKeys, allLayerId){
     let isChecKeys = checkKeys.find(layer => layer.layerId == id)
     let isLoadOnMap = map.findLayerById(id);
     if (isChecKeys) {
-      // 已勾选
+      // 已勾选 提交测试
       if (!isLoadOnMap) {
         // 地图未加载该图层，先加载图层 
         let layer = await gate();
